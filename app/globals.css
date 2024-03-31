@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media (width < 1250px) {
+    .head {
+        margin-left: 20px;
+    }
+
+    .cards {
+        justify-content: space-evenly;
+        gap: 30px;
+    }
+
+    .collection {
+        overflow-x: auto;
+    }
+
+    .colItems {
+        margin: 0px 4px;
+    }
+
+}
+
+@media (width < 600px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .secComp {
+        padding-bottom: 50px;
+    }
+
+}
